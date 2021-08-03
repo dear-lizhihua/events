@@ -17,7 +17,7 @@
   "bugs": {
     "url": "http://github.com/browserify/events/issues/"
   },
-  "main": "./events.js",
+  "module": "./events.js",
   "engines": {
     "node": ">=0.8.x"
   },

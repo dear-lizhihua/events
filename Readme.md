@@ -10,6 +10,20 @@ Note that the `events` module uses ES5 features. If you need to support very old
 
 This module is maintained, but only by very few people. If you'd like to help, let us know in the [Maintainer Needed](https://github.com/browserify/events/issues/43) issue!
 
+## Update
+
+```javascript
+module.exports = EventEmitter;
+module.exports.once = once;
+```
+
+change code to:
+
+```javascript
+export default EventEmitter;
+export { once }
+```
+
 ## Install
 
 You usually do not have to install `events` yourself! If your code runs in Node.js, `events` is built in. If your code runs in the browser, bundlers like [browserify](https://github.com/browserify/browserify) or [webpack](https://github.com/webpack/webpack) also include the `events` module.

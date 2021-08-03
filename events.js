@@ -53,8 +53,8 @@ var NumberIsNaN = Number.isNaN || function NumberIsNaN(value) {
 function EventEmitter() {
   EventEmitter.init.call(this);
 }
-module.exports = EventEmitter;
-module.exports.once = once;
+export default EventEmitter;
+export { once }
 
 // Backwards-compat with node 0.10.x
 EventEmitter.EventEmitter = EventEmitter;
